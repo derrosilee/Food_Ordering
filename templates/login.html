@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up </title>
+    <title>Login</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.min.css' %}">
@@ -19,13 +19,14 @@
     <div class="main">
 
         <div class="container">
+            <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" class="logo-login"  alt=""></a>
             <form method="POST" class="appointment-form" id="appointment-form">
-                <h2>Create an Account with us :)</h2>
+                <h2>Login :)</h2>
                 <div class="form-group-1">
 {#                    <input type="text" name="title" id="title" placeholder="Title" required />#}
-                    <input type="text" name="name" id="name" placeholder="Your Name" required />
+{#                    <input type="text" name="name" id="name" placeholder="Your Name" required />#}
                     <input type="email" name="email" id="email" placeholder="Email" required />
-                    <input type="number" name="phone_number" id="phone_number" placeholder="Phone number" required />
+                    <input type="password" name="password" id="password" placeholder="Password" required />
                 </div>
                 <div class="form-check">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
@@ -34,7 +35,8 @@
                 <div class="form-submit">
                     <input type="submit" name="submit" id="submit" class="submit" value="Register" />
                 </div>
-                <span class="label-agree-term"><span><span></span></span>Already have an Account?  <a href="#" class="term-service">Login</a></span>
+                <span class="label-agree-term" style="padding-left: 40px"><span><span></span></span>Don't have an Account?  <a href="{% url 'register' %}" class="term-service">Login</a></span>
+                <p style="color: black; padding-left: 40px"><a href="{% url 'home' %}">Back home</a></p>
             </form>
         </div>
 

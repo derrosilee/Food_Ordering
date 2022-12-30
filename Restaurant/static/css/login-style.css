@@ -300,6 +300,11 @@ li.init {
   position: absolute;
   width: 100%; }
 
+.logo-login{
+  padding-left: 60px;
+  max-height: 80px;
+}
+
 #confirm_type {
   z-index: 99; }
 

@@ -19,6 +19,7 @@
     <div class="main">
 
         <div class="container">
+            <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" class="logo-register"  alt=""></a>
             <form method="POST" class="appointment-form" id="appointment-form">
                 <h2>Create an Account with us :)</h2>
                 <div class="form-group-1">
@@ -35,6 +36,7 @@
                     <input type="submit" name="submit" id="submit" class="submit" value="Register" />
                 </div>
                 <span class="label-agree-term"><span><span></span></span>Already have an Account?  <a href="#" class="term-service">Login</a></span>
+                 <p style="color: black; padding-left: 40px"><a href="{% url 'home' %}">Back home</a></p>
             </form>
         </div>
 
