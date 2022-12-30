@@ -14,3 +14,8 @@ def menu(request):
 # Registration View
 def register(request):
     return render(request, 'register.html')
+
+
+# Login View
+def login(request):
+    return render(request, 'login.html')
