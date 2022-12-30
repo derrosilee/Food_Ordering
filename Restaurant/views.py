@@ -10,6 +10,7 @@ def home(request):
 def menu(request):
     return render(request, 'menu.html')
 
-# Registartion View
+
+# Registration View
 def register(request):
     return render(request, 'register.html')
