@@ -218,7 +218,7 @@ input[type=checkbox]:not(old):checked + label > span:before {
   color: #222; }
 
 .submit {
-  width: auto;
+  /*width: auto;*/
   background: #4966b1;
   color: #fff;
   padding: 16px 17px;
