@@ -19,3 +19,8 @@ def register(request):
 # Login View
 def login(request):
     return render(request, 'login.html')
+
+
+# Product View Page
+def product(request):
+    return render(request, 'product.html')
