@@ -8,6 +8,10 @@ class Menu(models.Model):
     name = models.CharField(max_length=50)
     price = models.IntegerField()
     description = models.TextField()
+    image_1 = models.ImageField()
+    image_2 = models.ImageField()
+    image_3 = models.ImageField()
+    image_4 = models.ImageField()
     SAUCES_AVAILABLE_CHOICES = [
         ('Tomato Ketchup', 'Tomato Ketchup'),
         ('Peri Peri Mayo', 'Peri Peri Mayo'),
