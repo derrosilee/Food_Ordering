@@ -1,3 +1,6 @@
 from django.contrib import admin
+from Restaurant.models import Menu
 
-# Register your models here.
+
+# Menu Fields
+admin.site.register(Menu)
