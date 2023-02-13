@@ -9,6 +9,7 @@ class Menu(models.Model):
     price = models.IntegerField()
     description = models.TextField()
     sauces = models.CharField(max_length=100)
+    ingredients = models.TextField()
     image_1 = models.ImageField(upload_to='images/food/')
     image_2 = models.ImageField(upload_to='images/food/')
     image_3 = models.ImageField(upload_to='images/food/')

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Menu
 
 
 # Create your views here.
@@ -8,7 +9,8 @@ def home(request):
 
 # To display page with the menu's
 def menu(request):
-    return render(request, 'menu.html')
+    menulist = Menu.objects.all()
+    return render(request, 'menu.html', {'menulist': menulist})
 
 
 # Registration View
