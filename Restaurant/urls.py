@@ -6,5 +6,5 @@ urlpatterns = [
     path('menu/', views.menu, name="menu"),
     path('register/', views.register, name="register"),
     path('login/', views.login, name="login"),
-    path('product/', views.product, name="product")  # Replace with I'd View
+    path('product/<int:id>/', views.product, name="product")  # Replace with I'd View
 ]

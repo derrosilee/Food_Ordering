@@ -29,7 +29,7 @@
                         <div class="col-lg-6 menu-item filter-starters">
                         <img src="{{menu.image_1.url}}" class="menu-img" alt="lobster">
                         <div class="menu-content">
-                            <a href="#">{{ menu.name}}</a><span>KSH: {{menu.price}}</span>
+                            <a href="{% url 'product' menu.id %}">{{ menu.name}}</a><span>KSH: {{menu.price}}</span>
                         </div>
                         <div class="menu-ingredients">
                             {{ menu.ingredients}}

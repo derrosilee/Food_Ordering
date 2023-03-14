@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Menu
 
 
@@ -24,5 +24,6 @@ def login(request):
 
 
 # Product View Page
-def product(request):
-    return render(request, 'product.html')
+def product(request, id):
+    product_desc = get_object_or_404(Menu, pk=id)
+    return render(request, 'product.html', {'product_desc': product_desc})
